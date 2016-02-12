@@ -1,0 +1,25 @@
+{
+    "name": "ijortengab/working-directory",
+    "description": "Turn CWD (Current Working Directory) as object.",
+    "type": "library",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "IjorTengab",
+            "email": "m_roji28@yahoo.com",
+            "homepage": "http://github.com/ijortengab"
+        }
+    ],
+    "require": {
+        "psr/log": "^1.0"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/ijortengab/working-directory"
+        }
+    ],
+    "autoload": {
+        "psr-4": {"IjorTengab\\": "src/"}
+    }
+}
