@@ -64,34 +64,4 @@ WorkingDirectory::prepareDirectory($dir);
 
 // Mengecek apakah path relative alih-alih absolute.
 WorkingDirectory::isRelativePath($path);
-
-// Mengembalikan $basename yang mengandung suffix integer autoincrement jika
-file sudah exists dalam $directory.
-WorkingDirectory::fileName($basename, $directory);
 ```
-
-## IjorTengab\FileSystem\Log
-
-Menyediakan fitur Log selama proses WorkingDirectory.
-
-```php
-use IjorTengab\FileSystem\WorkingDirectory;
-use IjorTengab\FileSystem\Log;
-
-$cwd = new WorkingDirectory('/home/ijortengab');
-$cwd->addFile('doc.txt');
-$cwd->chDir('secret');
-
-$log = Log::getAll();
-```
-
-## IjorTengab\FileSystem\FileName
-
-Menyediakan method createUnique untuk mengantisipasi filename yang telah exists
-dengan cara menambahkan suffix integer autoincrement pada filename.
-
-Contoh:
- - File.jpg
- - File_0.jpg
- - File_1.jpg
- - File_2.jpg
